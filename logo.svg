@@ -1,1 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs><linearGradient id="g" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#00a8ff"/><stop offset="1" stop-color="#8be7ff"/></linearGradient></defs><circle cx="100" cy="100" r="94" fill="#061525" stroke="#9fc7e8" stroke-width="3"/><path d="M38 139 82 53l48 86h-24l-9-19H69l-9 19H38Zm42-39h10l-5-11-5 11Z" fill="url(#g)"/><path d="M105 53h30c24 0 38 14 38 34s-14 34-38 34h-15V99h15c8 0 13-4 13-12s-5-12-13-12h-13l-17 32-12-22 12-32Z" fill="url(#g)"/><path d="M107 122h27c7 0 12-3 12-9 0-5-4-8-11-8h-13l-8 17h-7Z" fill="#f5fbff" opacity=".95"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+    <defs>
+        <linearGradient id="g" x1="0" y1="1" x2="1" y2="0">
+            <stop offset="0" stop-color="#00a8ff" />
+            <stop offset="1" stop-color="#8be7ff" />
+        </linearGradient>
+    </defs>
+
+    <circle
+        cx="100"
+        cy="100"
+        r="94"
+        fill="#061525"
+        stroke="#9fc7e8"
+        stroke-width="3"
+    />
+
+    <path
+        d="M38 139 82 53l48 86h-24l-9-19H69l-9 19H38Zm42-39h10l-5-11-5 11Z"
+        fill="url(#g)"
+    />
+
+    <path
+        d="M105 53h30c24 0 38 14 38 34s-14 34-38 34h-15V99h15c8 0 13-4 13-12s-5-12-13-12h-13l-17 32-12-22 12-32Z"
+        fill="url(#g)"
+    />
+
+    <path
+        d="M107 122h27c7 0 12-3 12-9 0-5-4-8-11-8h-13l-8 17h-7Z"
+        fill="#f5fbff"
+        opacity=".95"
+    />
+</svg>
