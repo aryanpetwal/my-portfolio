@@ -28,9 +28,8 @@ body::before {
 }
 
 /* ==================== NAVBAR ==================== */
-
 .navbar {
-    height: 92px;
+    min-height: 92px;
     position: fixed;
     top: 0;
     left: 0;
@@ -40,7 +39,7 @@ body::before {
     align-items: center;
     justify-content: space-between;
     padding: 0 9.5%;
-    background: rgba(2, 13, 29, 0.86);
+    background: rgba(2, 13, 29, 0.88);
     backdrop-filter: blur(16px);
     border-bottom: 1px solid rgba(31, 125, 205, 0.18);
 }
@@ -54,6 +53,7 @@ body::before {
     font-size: 25px;
     font-weight: 700;
     letter-spacing: -0.5px;
+    white-space: nowrap;
 }
 
 .brand img {
@@ -96,7 +96,6 @@ body::before {
 }
 
 /* ==================== HERO ==================== */
-
 .hero {
     min-height: 100vh;
     position: relative;
@@ -188,6 +187,7 @@ body::before {
 .secondary-btn {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 12px;
     padding: 15px 25px;
     border-radius: 10px;
@@ -230,9 +230,7 @@ body::before {
     inset: 0;
     border-radius: 50%;
     border: 2px solid rgba(14, 165, 233, 0.65);
-    box-shadow:
-        0 0 55px rgba(0, 149, 255, 0.09),
-        inset 0 0 45px rgba(0, 149, 255, 0.05);
+    box-shadow: 0 0 55px rgba(0, 149, 255, 0.09), inset 0 0 45px rgba(0, 149, 255, 0.05);
 }
 
 .hero-logo {
@@ -273,7 +271,6 @@ body::before {
 }
 
 /* ==================== QUICK SKILLS ==================== */
-
 .quick-skills {
     width: 80%;
     margin: -8px auto 50px;
@@ -297,7 +294,7 @@ body::before {
     border: 1px solid transparent;
     border-radius: 10px;
     cursor: pointer;
-    transition: transform 0.25s, background 0.25s, border-color 0.25s, box-shadow 0.25s, color 0.25s;
+    transition: 0.25s;
 }
 
 .quick-skills div:hover {
@@ -308,20 +305,19 @@ body::before {
     color: #fff;
 }
 
+.skill-icon {
+    font-size: 25px;
+    color: #00b7ff;
+    font-weight: 800;
+    transition: 0.25s;
+}
+
 .quick-skills div:hover .skill-icon {
     transform: scale(1.15);
     text-shadow: 0 0 14px rgba(0, 183, 255, 0.65);
 }
 
-.skill-icon {
-    font-size: 25px;
-    color: #00b7ff;
-    font-weight: 800;
-    transition: transform 0.25s, text-shadow 0.25s;
-}
-
 /* ==================== COMMON SECTIONS ==================== */
-
 .content-section {
     padding: 110px 10%;
     max-width: 1300px;
@@ -343,7 +339,6 @@ body::before {
 }
 
 /* ==================== ABOUT ==================== */
-
 .about-container {
     display: grid;
     grid-template-columns: 1.4fr 0.8fr;
@@ -379,7 +374,6 @@ body::before {
 }
 
 /* ==================== PROJECTS ==================== */
-
 .projects-section {
     max-width: 1400px;
 }
@@ -459,7 +453,6 @@ body::before {
 }
 
 /* ==================== SKILLS ==================== */
-
 .chips {
     display: flex;
     flex-wrap: wrap;
@@ -484,7 +477,6 @@ body::before {
 }
 
 /* ==================== CONTACT & FOOTER ==================== */
-
 .contact-section {
     text-align: center;
 }
@@ -523,30 +515,14 @@ footer {
 }
 
 /* ==================== ANIMATIONS ==================== */
-
 @keyframes wave {
-    0%,
-    60%,
-    100% {
-        transform: rotate(0);
-    }
-
-    10%,
-    30% {
-        transform: rotate(14deg);
-    }
-
-    20% {
-        transform: rotate(-8deg);
-    }
-
-    40% {
-        transform: rotate(-4deg);
-    }
+    0%, 60%, 100% { transform: rotate(0); }
+    10%, 30% { transform: rotate(14deg); }
+    20% { transform: rotate(-8deg); }
+    40% { transform: rotate(-4deg); }
 }
 
 /* ==================== RESPONSIVE ==================== */
-
 @media (max-width: 1050px) {
     .navbar {
         padding: 0 5%;
@@ -576,17 +552,16 @@ footer {
     }
 
     .projects-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 800px) {
     .navbar {
-        height: auto;
-        min-height: 82px;
-        padding: 15px 5%;
+        min-height: 80px;
+        padding: 12px 5%;
         flex-direction: column;
-        gap: 12px;
+        gap: 10px;
     }
 
     .brand {
@@ -594,23 +569,28 @@ footer {
     }
 
     .brand img {
-        width: 45px;
-        height: 45px;
+        width: 44px;
+        height: 44px;
     }
 
     .nav-links {
-        gap: 18px;
+        width: 100%;
+        gap: 15px;
         flex-wrap: wrap;
         justify-content: center;
     }
 
+    .nav-links a {
+        font-size: 14px;
+    }
+
     .nav-links a.active::after {
-        bottom: -7px;
+        bottom: -5px;
     }
 
     .hero {
-        padding: 150px 7% 70px;
         min-height: auto;
+        padding: 160px 7% 70px;
         flex-direction: column;
         align-items: flex-start;
     }
@@ -620,7 +600,8 @@ footer {
     }
 
     .hero h1 {
-        font-size: 48px;
+        font-size: clamp(38px, 9vw, 52px);
+        letter-spacing: -1.5px;
     }
 
     .hero h2 {
@@ -637,7 +618,7 @@ footer {
         top: auto;
         width: 240px;
         height: 240px;
-        margin: 60px auto 0;
+        margin: 55px auto 0;
     }
 
     .hero-logo {
@@ -647,8 +628,21 @@ footer {
 
     .quick-skills {
         width: 86%;
+        margin-top: 0;
+        padding: 18px;
         flex-wrap: wrap;
         justify-content: center;
+        gap: 8px;
+    }
+
+    .quick-skills div {
+        gap: 9px;
+        padding: 9px 11px;
+        font-size: 14px;
+    }
+
+    .skill-icon {
+        font-size: 21px;
     }
 
     .about-container {
@@ -666,34 +660,117 @@ footer {
 }
 
 @media (max-width: 520px) {
+    .navbar {
+        padding: 10px 4%;
+    }
+
+    .brand {
+        gap: 10px;
+        font-size: 19px;
+    }
+
+    .brand img {
+        width: 40px;
+        height: 40px;
+    }
+
     .nav-links {
-        gap: 13px;
+        gap: 11px;
     }
 
     .nav-links a {
-        font-size: 14px;
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 150px 6% 55px;
+    }
+
+    .eyebrow {
+        font-size: 13px;
+        padding: 7px 12px;
+        gap: 8px;
+    }
+
+    .eyebrow span {
+        font-size: 17px;
     }
 
     .hero h1 {
-        font-size: 39px;
-        letter-spacing: -1.5px;
+        font-size: 37px;
+        line-height: 1.12;
     }
 
     .hero h2 {
-        font-size: 23px;
+        font-size: 22px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+
+    .hero-buttons {
+        width: 100%;
+        gap: 12px;
     }
 
     .hero-buttons a {
         width: 100%;
-        justify-content: center;
+        padding: 13px 18px;
+    }
+
+    .hero-logo-wrap {
+        width: 190px;
+        height: 190px;
+        margin-top: 45px;
+    }
+
+    .hero-logo {
+        width: 130px;
+        height: 130px;
     }
 
     .quick-skills {
-        padding: 18px;
+        width: 90%;
+        padding: 14px 8px;
+        gap: 5px;
+    }
+
+    .quick-skills div {
+        padding: 8px 9px;
+        font-size: 13px;
+    }
+
+    .skill-icon {
+        font-size: 18px;
+    }
+
+    .content-section {
+        padding: 65px 6%;
     }
 
     .content-section h2 {
-        font-size: 34px;
+        font-size: 32px;
+    }
+
+    .section-label {
+        font-size: 12px;
+        letter-spacing: 3px;
+    }
+
+    .about-container p:not(.section-label),
+    .contact-section p {
+        font-size: 16px;
+    }
+
+    .about-card {
+        padding: 24px;
+    }
+
+    .project-card {
+        padding: 24px;
+        min-height: auto;
     }
 
     .section-heading-row {
@@ -702,6 +779,48 @@ footer {
 
     .all-projects {
         display: inline-block;
-        margin-top: 15px;
+        margin-top: 12px;
+    }
+
+    .chips {
+        gap: 9px;
+    }
+
+    .chips span {
+        padding: 9px 14px;
+        font-size: 14px;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-links a {
+        width: 100%;
+    }
+
+    footer {
+        padding: 22px 12px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 360px) {
+    .nav-links {
+        gap: 8px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 33px;
+    }
+
+    .quick-skills div {
+        width: 100%;
+        justify-content: center;
     }
 }
