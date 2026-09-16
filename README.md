@@ -1,45 +1,76 @@
 # Aryan Petwal — Portfolio
 
-Personal portfolio website showcasing my projects, skills, and learning journey as a B.Tech Computer Science student.
+### B.Tech CSE Student | Java & DSA Learner | Software Development
+
+I’m a B.Tech Computer Science student focused on building strong programming fundamentals, improving problem-solving skills, and developing practical software projects.
 
 ## 🌐 Live Portfolio
 
-[View my portfolio](https://aryanpetwal.github.io/my-portfolio/)
+**[View My Portfolio](https://aryanpetwal.github.io/my-portfolio/)**
 
 ## 👨‍💻 About Me
 
-I am a B.Tech Computer Science student focused on improving my programming, problem-solving, and software development skills.
+- 🎓 B.Tech Computer Science student
+- 💻 Focused on **Java, OOP, and Data Structures & Algorithms**
+- 🧠 Practicing problem-solving through **LeetCode**
+- 🌐 Learning and building projects with **HTML, CSS, and JavaScript**
+- 🔧 Using **Git and GitHub** to manage and showcase my work
 
-Currently, I am working on:
-- Java and Object-Oriented Programming
-- Data Structures & Algorithms
-- Web development with HTML, CSS, and JavaScript
-- Building practical projects and improving my Git/GitHub workflow
+## 🛠️ Tech Stack
 
-## 🛠️ Skills
+| Category | Technologies |
+|---|---|
+| Languages | Java, Python, C |
+| Web | HTML, CSS, JavaScript |
+| Core | OOP, Data Structures & Algorithms |
+| Tools | Git, GitHub, VS Code |
+| Hardware | Arduino, Tinkercad |
 
-- **Languages:** Java, Python, C
-- **Web:** HTML, CSS, JavaScript
-- **Core:** OOP, Data Structures & Algorithms
-- **Tools:** Git, GitHub, VS Code
-- **Hardware:** Arduino, Tinkercad
+## 🚀 Featured Projects
 
-## 🚀 Projects
+### 📝 Personal Portfolio
+A responsive personal portfolio website built to showcase my skills, projects, and learning journey.
 
-### Sound Activated Switch
-Arduino-based electronics project that activates a device when sound is detected.
+**Tech:** HTML, CSS, JavaScript
 
-### To-Do List
-A simple web application built with HTML, CSS, and JavaScript.
+### ✅ To-Do List
+A simple task-management web application with an interactive interface.
 
-## 📚 Current Focus
+**Tech:** HTML, CSS, JavaScript
 
-Improving problem-solving through LeetCode and building projects that strengthen my software development fundamentals.
+### 🔊 Sound Activated Switch
+An Arduino-based electronics project that uses sound detection to control a device.
 
-## 📫 Connect
+**Tech:** Arduino, Tinkercad
 
-- GitHub: [aryanpetwal](https://github.com/aryanpetwal)
-- Portfolio: [aryanpetwal.github.io/my-portfolio](https://aryanpetwal.github.io/my-portfolio/)
+## 📚 DSA & LeetCode
+
+I regularly practice Data Structures & Algorithms in **Java** to improve my problem-solving ability and prepare for software development interviews.
+
+Current areas of practice include:
+
+- Arrays
+- Strings
+- Hashing
+- Two Pointers
+- Binary Search
+- Sorting
+- Basic Mathematics
+
+My DSA practice is maintained separately in my GitHub repositories as I continue solving problems.
+
+## 🎯 Current Learning Focus
+
+- Strengthening **Java & OOP fundamentals**
+- Improving **DSA problem-solving**
+- Building practical **web development projects**
+- Learning better **Git/GitHub workflows**
+- Preparing for **SDE-1 / Software Developer opportunities**
+
+## 🔗 Connect With Me
+
+- **GitHub:** [github.com/aryanpetwal](https://github.com/aryanpetwal)
+- **Portfolio:** [aryanpetwal.github.io/my-portfolio](https://aryanpetwal.github.io/my-portfolio/)
 
 ---
 
