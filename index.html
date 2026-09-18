@@ -12,7 +12,8 @@
 
     <link rel="canonical" href="https://aryanpetwal.github.io/my-portfolio/">
     <link rel="icon" type="image/svg+xml" href="logo.svg?v=2">
-    <link rel="stylesheet" href="style.css?v=2">
+    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="Aryan Petwal | Software Developer Portfolio">
@@ -54,6 +55,7 @@
             <a href="#profiles">Profiles</a>
             <a href="#contact">Contact</a>
         </div>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
     </nav>
 
     <main>
@@ -142,39 +144,41 @@
         </section>
 
         <section id="profiles" class="content-section profiles-section">
-            <div class="section-heading-row">
-                <div>
-                    <p class="section-label">FIND ME ONLINE</p>
-                    <h2>My Profiles &amp; Socials</h2>
-                </div>
+            <div class="profiles-heading">
+                <p class="section-label">FIND ME ONLINE</p>
+                <h2>My Profiles &amp; <strong>Socials</strong></h2>
+                <p class="profiles-intro">Connect with me on different platforms. Feel free to follow, check out my work, or just say hi!</p>
             </div>
             <div class="profiles-grid">
-                <a class="profile-card" href="https://github.com/aryanpetwal" target="_blank" rel="noopener"><span class="profile-mark">GH</span><span><b>GitHub</b><small>@aryanpetwal</small></span><span class="profile-arrow">↗</span></a>
-                <a class="profile-card" href="https://www.linkedin.com/in/aryan-petwal-149062328/" target="_blank" rel="noopener"><span class="profile-mark">in</span><span><b>LinkedIn</b><small>Professional profile</small></span><span class="profile-arrow">↗</span></a>
-                <a class="profile-card" href="https://leetcode.com/u/ryn1n__/" target="_blank" rel="noopener"><span class="profile-mark">&lt;/&gt;</span><span><b>LeetCode</b><small>DSA practice</small></span><span class="profile-arrow">↗</span></a>
-                <a class="profile-card" href="https://instagram.com/ryn1n__" target="_blank" rel="noopener"><span class="profile-mark">IG</span><span><b>Instagram</b><small>@ryn1n__</small></span><span class="profile-arrow">↗</span></a>
-                <a class="profile-card" href="https://bsky.app/profile/aryanpetwal.bsky.social" target="_blank" rel="noopener"><span class="profile-mark">BS</span><span><b>Bluesky</b><small>@aryanpetwal.bsky.social</small></span><span class="profile-arrow">↗</span></a>
-                <a class="profile-card" href="https://behance.net/aryanpetwal" target="_blank" rel="noopener"><span class="profile-mark">Be</span><span><b>Behance</b><small>@aryanpetwal</small></span><span class="profile-arrow">↗</span></a>
-                <a class="profile-card" href="https://discord.gg/FUKafdm93" target="_blank" rel="noopener"><span class="profile-mark">DC</span><span><b>Discord</b><small>Community</small></span><span class="profile-arrow">↗</span></a>
-                <a class="profile-card" href="https://medium.com/@aryanpetwal4210" target="_blank" rel="noopener"><span class="profile-mark">M</span><span><b>Medium</b><small>@aryanpetwal4210</small></span><span class="profile-arrow">↗</span></a>
-                <a class="profile-card" href="https://pinterest.com/ryn1n__" target="_blank" rel="noopener"><span class="profile-mark">P</span><span><b>Pinterest</b><small>@ryn1n__</small></span><span class="profile-arrow">↗</span></a>
-                <a class="profile-card" href="https://www.quora.com/profile/Aryan-Petwal-4" target="_blank" rel="noopener"><span class="profile-mark">Q</span><span><b>Quora</b><small>Aryan Petwal</small></span><span class="profile-arrow">↗</span></a>
-                <a class="profile-card" href="https://reddit.com/user/ryn1n__" target="_blank" rel="noopener"><span class="profile-mark">R</span><span><b>Reddit</b><small>u/ryn1n__</small></span><span class="profile-arrow">↗</span></a>
-                <a class="profile-card" href="https://www.twitch.tv/ryn1n__" target="_blank" rel="noopener"><span class="profile-mark">TW</span><span><b>Twitch</b><small>@ryn1n__</small></span><span class="profile-arrow">↗</span></a>
-                <a class="profile-card" href="https://x.com/aryan_petwal" target="_blank" rel="noopener"><span class="profile-mark">X</span><span><b>X</b><small>@aryan_petwal</small></span><span class="profile-arrow">↗</span></a>
-                <a class="profile-card" href="https://youtube.com/@aryancoree_7" target="_blank" rel="noopener"><span class="profile-mark">YT</span><span><b>YouTube</b><small>@aryancoree_7</small></span><span class="profile-arrow">↗</span></a>
-                <a class="profile-card" href="https://codepen.io/Aryan-Petwal" target="_blank" rel="noopener"><span class="profile-mark">CP</span><span><b>CodePen</b><small>Aryan-Petwal</small></span><span class="profile-arrow">↗</span></a>
-                <a class="profile-card" href="https://mastodon.social/@aryanpetwal" target="_blank" rel="noopener"><span class="profile-mark">M</span><span><b>Mastodon</b><small>@aryanpetwal</small></span><span class="profile-arrow">↗</span></a>
-                <a class="profile-card" href="https://www.strava.com/athletes/1523932396" target="_blank" rel="noopener"><span class="profile-mark">S</span><span><b>Strava</b><small>Running &amp; fitness</small></span><span class="profile-arrow">↗</span></a>
-                <a class="profile-card" href="mailto:aryanpetwal4210@gmail.com"><span class="profile-mark">@</span><span><b>Email</b><small>aryanpetwal4210@gmail.com</small></span><span class="profile-arrow">↗</span></a>
+                <a class="profile-card" href="https://github.com/aryanpetwal" target="_blank" rel="noopener"><span class="profile-mark"><i class="fa-brands fa-github"></i></span><span class="profile-info"><b>GitHub</b><small>@aryanpetwal</small></span><i class="fa-solid fa-arrow-up-right-from-square profile-arrow"></i></a>
+                <a class="profile-card" href="https://www.linkedin.com/in/aryan-petwal-149062328/" target="_blank" rel="noopener"><span class="profile-mark"><i class="fa-brands fa-linkedin-in"></i></span><span class="profile-info"><b>LinkedIn</b><small>Professional profile</small></span><i class="fa-solid fa-arrow-up-right-from-square profile-arrow"></i></a>
+                <a class="profile-card" href="https://leetcode.com/u/ryn1n__/" target="_blank" rel="noopener"><span class="profile-mark"><i class="fa-brands fa-code"></i></span><span class="profile-info"><b>LeetCode</b><small>DSA practice</small></span><i class="fa-solid fa-arrow-up-right-from-square profile-arrow"></i></a>
+                <a class="profile-card" href="https://instagram.com/ryn1n__" target="_blank" rel="noopener"><span class="profile-mark"><i class="fa-brands fa-instagram"></i></span><span class="profile-info"><b>Instagram</b><small>@ryn1n__</small></span><i class="fa-solid fa-arrow-up-right-from-square profile-arrow"></i></a>
+                <a class="profile-card" href="https://bsky.app/profile/aryanpetwal.bsky.social" target="_blank" rel="noopener"><span class="profile-mark"><i class="fa-brands fa-bluesky"></i></span><span class="profile-info"><b>Bluesky</b><small>@aryanpetwal.bsky.social</small></span><i class="fa-solid fa-arrow-up-right-from-square profile-arrow"></i></a>
+                <a class="profile-card" href="https://behance.net/aryanpetwal" target="_blank" rel="noopener"><span class="profile-mark"><i class="fa-brands fa-behance"></i></span><span class="profile-info"><b>Behance</b><small>@aryanpetwal</small></span><i class="fa-solid fa-arrow-up-right-from-square profile-arrow"></i></a>
+                <a class="profile-card" href="https://discord.gg/FUKafdm93" target="_blank" rel="noopener"><span class="profile-mark"><i class="fa-brands fa-discord"></i></span><span class="profile-info"><b>Discord</b><small>Community</small></span><i class="fa-solid fa-arrow-up-right-from-square profile-arrow"></i></a>
+                <a class="profile-card" href="https://medium.com/@aryanpetwal4210" target="_blank" rel="noopener"><span class="profile-mark"><i class="fa-brands fa-medium"></i></span><span class="profile-info"><b>Medium</b><small>@aryanpetwal4210</small></span><i class="fa-solid fa-arrow-up-right-from-square profile-arrow"></i></a>
+                <a class="profile-card" href="https://pinterest.com/ryn1n__" target="_blank" rel="noopener"><span class="profile-mark"><i class="fa-brands fa-pinterest-p"></i></span><span class="profile-info"><b>Pinterest</b><small>@ryn1n__</small></span><i class="fa-solid fa-arrow-up-right-from-square profile-arrow"></i></a>
+                <a class="profile-card" href="https://www.quora.com/profile/Aryan-Petwal-4" target="_blank" rel="noopener"><span class="profile-mark"><i class="fa-brands fa-quora"></i></span><span class="profile-info"><b>Quora</b><small>Aryan Petwal</small></span><i class="fa-solid fa-arrow-up-right-from-square profile-arrow"></i></a>
+                <a class="profile-card" href="https://reddit.com/user/ryn1n__" target="_blank" rel="noopener"><span class="profile-mark"><i class="fa-brands fa-reddit-alien"></i></span><span class="profile-info"><b>Reddit</b><small>u/ryn1n__</small></span><i class="fa-solid fa-arrow-up-right-from-square profile-arrow"></i></a>
+                <a class="profile-card" href="https://www.twitch.tv/ryn1n__" target="_blank" rel="noopener"><span class="profile-mark"><i class="fa-brands fa-twitch"></i></span><span class="profile-info"><b>Twitch</b><small>@ryn1n__</small></span><i class="fa-solid fa-arrow-up-right-from-square profile-arrow"></i></a>
+                <a class="profile-card" href="https://x.com/aryan_petwal" target="_blank" rel="noopener"><span class="profile-mark"><i class="fa-brands fa-x-twitter"></i></span><span class="profile-info"><b>X</b><small>@aryan_petwal</small></span><i class="fa-solid fa-arrow-up-right-from-square profile-arrow"></i></a>
+                <a class="profile-card" href="https://youtube.com/@aryancoree_7" target="_blank" rel="noopener"><span class="profile-mark"><i class="fa-brands fa-youtube"></i></span><span class="profile-info"><b>YouTube</b><small>@aryancoree_7</small></span><i class="fa-solid fa-arrow-up-right-from-square profile-arrow"></i></a>
+                <a class="profile-card" href="https://codepen.io/Aryan-Petwal" target="_blank" rel="noopener"><span class="profile-mark"><i class="fa-brands fa-codepen"></i></span><span class="profile-info"><b>CodePen</b><small>Aryan-Petwal</small></span><i class="fa-solid fa-arrow-up-right-from-square profile-arrow"></i></a>
+                <a class="profile-card" href="https://mastodon.social/@aryanpetwal" target="_blank" rel="noopener"><span class="profile-mark"><i class="fa-brands fa-mastodon"></i></span><span class="profile-info"><b>Mastodon</b><small>@aryanpetwal</small></span><i class="fa-solid fa-arrow-up-right-from-square profile-arrow"></i></a>
+                <a class="profile-card" href="https://www.strava.com/athletes/1523932396" target="_blank" rel="noopener"><span class="profile-mark"><i class="fa-brands fa-strava"></i></span><span class="profile-info"><b>Strava</b><small>Running & fitness</small></span><i class="fa-solid fa-arrow-up-right-from-square profile-arrow"></i></a>
+                <a class="profile-card" href="mailto:aryanpetwal4210@gmail.com"><span class="profile-mark"><i class="fa-brands fa-envelope"></i></span><span class="profile-info"><b>Email</b><small>aryanpetwal4210@gmail.com</small></span><i class="fa-solid fa-arrow-up-right-from-square profile-arrow"></i></a>
             </div>
+            <div class="profiles-divider"><span></span><i class="fa-solid fa-circle"></i><span></span></div>
+            <p class="profiles-closing"><i class="fa-solid fa-code"></i> Let's connect and build something amazing together!</p>
         </section>
 
-        <section id="skills" class="content-section">
+        <section id="skills" class="content-section skills-section">
             <p class="section-label">MY SKILLS</p>
-            <h2>Software Development Skills</h2>
+            <h2>Software Development <strong>Skills</strong></h2>
+            <p class="skills-intro">I work with technologies and tools to build practical, efficient and user-friendly applications.</p>
             <div class="chips">
-                <span>Java</span><span>OOP</span><span>Data Structures</span><span>Algorithms</span><span>Python</span><span>C</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>DBMS</span><span>Git</span><span>GitHub</span><span>Arduino</span>
+                <span><i class="fa-brands fa-java"></i> Java</span><span><i class="fa-solid fa-cubes"></i> OOP</span><span><i class="fa-solid fa-diagram-project"></i> Data Structures</span><span><i class="fa-solid fa-code"></i> Algorithms</span><span><i class="fa-brands fa-python"></i> Python</span><span><i class="fa-solid fa-c"></i> C</span><span><i class="fa-brands fa-html5"></i> HTML</span><span><i class="fa-brands fa-css3-alt"></i> CSS</span><span><i class="fa-brands fa-js"></i> JavaScript</span><span><i class="fa-solid fa-database"></i> DBMS</span><span><i class="fa-brands fa-git-alt"></i> Git</span><span><i class="fa-brands fa-github"></i> GitHub</span><span><i class="fa-solid fa-microchip"></i> Arduino</span>
             </div>
         </section>
 
@@ -186,12 +190,26 @@
             <div class="contact-links">
                 <a href="https://github.com/aryanpetwal" target="_blank" rel="noopener">GitHub</a>
                 <a href="https://www.linkedin.com/in/aryan-petwal-149062328/" target="_blank" rel="noopener">LinkedIn</a>
-                <a href="mailto:aryanpetwal4210@email.com">Email Me</a>
+                <a href="mailto:aryanpetwal4210@gmail.com">Email Me</a>
             </div>
         </section>
     </main>
 
-    <footer>© 2026 Aryan Petwal. All rights reserved.</footer>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <a class="footer-brand" href="#home"><img src="logo.svg?v=2" alt="AP logo"><span><b>Aryan Petwal</b><small>Build · Learn · Grow</small></span></a>
+            <div class="footer-socials">
+                <a href="https://github.com/aryanpetwal" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/aryan-petwal-149062328/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://instagram.com/ryn1n__" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/aryan_petwal" target="_blank" rel="noopener" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://youtube.com/@aryancoree_7" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="mailto:aryanpetwal4210@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <a class="back-top" href="#home" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+        <div class="footer-bottom">© 2026 Aryan Petwal. All rights reserved.</div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
