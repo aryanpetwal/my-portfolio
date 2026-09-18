@@ -824,3 +824,87 @@ footer {
         justify-content: center;
     }
 }
+
+/* ==================== PROFILES ==================== */
+.profiles-section {
+    max-width: 1400px;
+}
+
+.profiles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.profile-card {
+    display: grid;
+    grid-template-columns: 48px 1fr auto;
+    align-items: center;
+    gap: 14px;
+    min-height: 78px;
+    padding: 14px 16px;
+    border: 1px solid #123b5d;
+    border-radius: 14px;
+    background: linear-gradient(145deg, rgba(7, 27, 47, 0.9), rgba(3, 17, 31, 0.9));
+    color: #f8fafc;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.profile-card:hover {
+    transform: translateY(-4px);
+    border-color: #00a9f5;
+    box-shadow: 0 14px 35px rgba(0, 149, 255, 0.1);
+}
+
+.profile-mark {
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: #0c3654;
+    color: #00b7ff;
+    font-weight: 850;
+    font-size: 15px;
+}
+
+.profile-card b,
+.profile-card small {
+    display: block;
+}
+
+.profile-card b {
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+
+.profile-card small {
+    color: #8fa6bb;
+    font-size: 12px;
+    overflow-wrap: anywhere;
+}
+
+.profile-arrow {
+    color: #00b7ff;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+@media (max-width: 1050px) {
+    .profiles-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 800px) {
+    .profiles-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 520px) {
+    .profile-card {
+        min-height: 72px;
+    }
+}
