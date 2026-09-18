@@ -1235,3 +1235,13 @@ footer {
         gap: 20px;
     }
 }
+
+
+/* Real platform logo images */
+.profile-mark .profile-icon-img,
+.profile-card > .profile-icon-img {
+    width: 29px;
+    height: 29px;
+    display: block;
+    object-fit: contain;
+}
